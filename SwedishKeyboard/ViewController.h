@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *sampleTextField;
+
+- (IBAction)tapWTF:(id)sender;
 
 @end
 

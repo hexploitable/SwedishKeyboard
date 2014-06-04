@@ -15,14 +15,12 @@
 
 @implementation ViewController
             
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.sampleTextField becomeFirstResponder];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)tapWTF:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ysrnry.co.uk/hurdieho.htm"]];
 }
-
 @end

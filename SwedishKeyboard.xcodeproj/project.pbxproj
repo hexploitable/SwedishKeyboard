@@ -13,6 +13,8 @@
 		C4ADE25E193F4F0500988541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4ADE25C193F4F0500988541 /* Main.storyboard */; };
 		C4ADE260193F4F0500988541 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4ADE25F193F4F0500988541 /* Images.xcassets */; };
 		C4ADE26C193F4F0500988541 /* SwedishKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4ADE26B193F4F0500988541 /* SwedishKeyboardTests.m */; };
+		C4ADE27F193F4F4000988541 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4ADE27E193F4F4000988541 /* KeyboardViewController.m */; };
+		C4ADE282193F4F4000988541 /* com.wandlesoftware.SwedishKeyboard.HurdieHo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C4ADE279193F4F4000988541 /* com.wandlesoftware.SwedishKeyboard.HurdieHo.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,35 @@
 			remoteGlobalIDString = C4ADE24E193F4F0500988541;
 			remoteInfo = SwedishKeyboard;
 		};
+		C4ADE280193F4F4000988541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4ADE247193F4F0500988541 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4ADE278193F4F4000988541;
+			remoteInfo = HurdieHo;
+		};
+		C4ADE283193F4F4000988541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4ADE247193F4F0500988541 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4ADE278193F4F4000988541;
+			remoteInfo = HurdieHo;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4ADE288193F4F4000988541 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C4ADE282193F4F4000988541 /* com.wandlesoftware.SwedishKeyboard.HurdieHo.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C4ADE24F193F4F0500988541 /* SwedishKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwedishKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +68,10 @@
 		C4ADE265193F4F0500988541 /* SwedishKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwedishKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4ADE26A193F4F0500988541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4ADE26B193F4F0500988541 /* SwedishKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwedishKeyboardTests.m; sourceTree = "<group>"; };
+		C4ADE279193F4F4000988541 /* com.wandlesoftware.SwedishKeyboard.HurdieHo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.wandlesoftware.SwedishKeyboard.HurdieHo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4ADE27C193F4F4000988541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4ADE27D193F4F4000988541 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		C4ADE27E193F4F4000988541 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +89,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4ADE276193F4F4000988541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +104,7 @@
 			children = (
 				C4ADE251193F4F0500988541 /* SwedishKeyboard */,
 				C4ADE268193F4F0500988541 /* SwedishKeyboardTests */,
+				C4ADE27A193F4F4000988541 /* HurdieHo */,
 				C4ADE250193F4F0500988541 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +114,7 @@
 			children = (
 				C4ADE24F193F4F0500988541 /* SwedishKeyboard.app */,
 				C4ADE265193F4F0500988541 /* SwedishKeyboardTests.xctest */,
+				C4ADE279193F4F4000988541 /* com.wandlesoftware.SwedishKeyboard.HurdieHo.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +159,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C4ADE27A193F4F4000988541 /* HurdieHo */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADE27D193F4F4000988541 /* KeyboardViewController.h */,
+				C4ADE27E193F4F4000988541 /* KeyboardViewController.m */,
+				C4ADE27B193F4F4000988541 /* Supporting Files */,
+			);
+			path = HurdieHo;
+			sourceTree = "<group>";
+		};
+		C4ADE27B193F4F4000988541 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADE27C193F4F4000988541 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,10 +187,13 @@
 				C4ADE24B193F4F0500988541 /* Sources */,
 				C4ADE24C193F4F0500988541 /* Frameworks */,
 				C4ADE24D193F4F0500988541 /* Resources */,
+				C4ADE288193F4F4000988541 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C4ADE281193F4F4000988541 /* PBXTargetDependency */,
+				C4ADE284193F4F4000988541 /* PBXTargetDependency */,
 			);
 			name = SwedishKeyboard;
 			productName = SwedishKeyboard;
@@ -154,6 +218,23 @@
 			productReference = C4ADE265193F4F0500988541 /* SwedishKeyboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C4ADE278193F4F4000988541 /* HurdieHo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4ADE285193F4F4000988541 /* Build configuration list for PBXNativeTarget "HurdieHo" */;
+			buildPhases = (
+				C4ADE275193F4F4000988541 /* Sources */,
+				C4ADE276193F4F4000988541 /* Frameworks */,
+				C4ADE277193F4F4000988541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HurdieHo;
+			productName = HurdieHo;
+			productReference = C4ADE279193F4F4000988541 /* com.wandlesoftware.SwedishKeyboard.HurdieHo.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +250,9 @@
 					C4ADE264193F4F0500988541 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = C4ADE24E193F4F0500988541;
+					};
+					C4ADE278193F4F4000988541 = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -187,6 +271,7 @@
 			targets = (
 				C4ADE24E193F4F0500988541 /* SwedishKeyboard */,
 				C4ADE264193F4F0500988541 /* SwedishKeyboardTests */,
+				C4ADE278193F4F4000988541 /* HurdieHo */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +287,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C4ADE263193F4F0500988541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4ADE277193F4F4000988541 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,6 +321,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4ADE275193F4F4000988541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4ADE27F193F4F4000988541 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +336,16 @@
 			isa = PBXTargetDependency;
 			target = C4ADE24E193F4F0500988541 /* SwedishKeyboard */;
 			targetProxy = C4ADE266193F4F0500988541 /* PBXContainerItemProxy */;
+		};
+		C4ADE281193F4F4000988541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4ADE278193F4F4000988541 /* HurdieHo */;
+			targetProxy = C4ADE280193F4F4000988541 /* PBXContainerItemProxy */;
+		};
+		C4ADE284193F4F4000988541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4ADE278193F4F4000988541 /* HurdieHo */;
+			targetProxy = C4ADE283193F4F4000988541 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -385,6 +495,32 @@
 			};
 			name = Release;
 		};
+		C4ADE286193F4F4000988541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HurdieHo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "com.wandlesoftware.SwedishKeyboard.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C4ADE287193F4F4000988541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HurdieHo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "com.wandlesoftware.SwedishKeyboard.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +546,14 @@
 			buildConfigurations = (
 				C4ADE273193F4F0500988541 /* Debug */,
 				C4ADE274193F4F0500988541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C4ADE285193F4F4000988541 /* Build configuration list for PBXNativeTarget "HurdieHo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4ADE286193F4F4000988541 /* Debug */,
+				C4ADE287193F4F4000988541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
